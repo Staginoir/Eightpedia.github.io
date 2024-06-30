@@ -882,6 +882,13 @@ section,
 /*--------------------------------------------------------------
 # About Alt Section
 --------------------------------------------------------------*/
+.about-alt .col-lg-6 img {
+  width: 100%; /* Memastikan gambar memenuhi lebar container */
+  height: auto; /* Menjaga aspek rasio gambar */
+  max-width: 300px; /* Menetapkan lebar maksimal untuk gambar */
+  display: block; /* Menghapus margin default dari inline elements */
+  margin: 0 auto; /* Menyelaraskan gambar di tengah */
+}
 .about-alt .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
