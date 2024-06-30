@@ -926,6 +926,7 @@ section,
     max-width: 100%; /* Gambar memenuhi lebar kontainer maksimal */
     height: auto;    /* Menjaga rasio aspek */
   }
+}
 .about-alt .play-btn {
   width: 94px;
   height: 94px;
