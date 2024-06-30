@@ -895,6 +895,7 @@ section,
 .about-alt .content ul li {
   padding: 10px 0 0 0;
   display: flex;
+  align-items: center; /* Menyelaraskan ikon dan teks secara vertikal */
 }
 
 .about-alt .content ul i {
@@ -915,8 +916,8 @@ section,
   border-radius: 50%;
   display: block;
   position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
+  left: calc(50% - 47px); /* Menyelaraskan tombol di tengah gambar */
+  top: calc(50% - 47px); /* Menyelaraskan tombol di tengah gambar */
   overflow: hidden;
 }
 
@@ -926,9 +927,7 @@ section,
   width: 120px;
   height: 120px;
   animation-delay: 0s;
-  animation: pulsate-btn 2s;
-  animation-direction: forwards;
-  animation-iteration-count: infinite;
+  animation: pulsate-btn 2s infinite forwards;
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
@@ -943,7 +942,7 @@ section,
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-40%) translateY(-50%);
+  transform: translate(-40%, -50%);
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
@@ -954,20 +953,8 @@ section,
 }
 
 .about-alt .play-btn:hover:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
   border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
   animation: none;
-  border-radius: 0;
 }
 
 .about-alt .play-btn:hover:after {
@@ -977,15 +964,15 @@ section,
 
 @keyframes pulsate-btn {
   0% {
-    transform: scale(0.6, 0.6);
+    transform: scale(0.6);
     opacity: 1;
   }
-
   100% {
-    transform: scale(1, 1);
+    transform: scale(1);
     opacity: 0;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Clients Section
