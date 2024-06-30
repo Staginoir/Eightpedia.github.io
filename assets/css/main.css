@@ -909,24 +909,7 @@ section,
 .about-alt .content p:last-child {
   margin-bottom: 0;
 }
-.about-alt.responsive-image {
-  max-width: 100%; /* Gambar akan memenuhi lebar kontainer maksimal */
-  height: auto;    /* Menjaga rasio aspek gambar */
-  display: block;  /* Menghilangkan padding default dari inline elements */
-  margin: 0 auto;  /* Pusatkan gambar dalam kontainer */
-}
 
-
-@media (max-width: 767px) {
-  .col-lg-6 {
-    padding: 0; /* Menghilangkan padding yang tidak perlu */
-  }
-
-.about-alt.responsive-image {
-    max-width: 100%; /* Gambar memenuhi lebar kontainer maksimal */
-    height: auto;    /* Menjaga rasio aspek */
-  }
-}
 .about-alt .play-btn {
   width: 94px;
   height: 94px;
