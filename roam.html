@@ -11,22 +11,27 @@
   <!-- Custom styles -->
   <style>
     body {
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
     }
     .container {
-      margin-top: 50px;
+      padding: 60px 15px;
     }
     .card {
+      background: #fff;
       border: none;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
     .card-header {
       background-color: #007bff;
       color: #fff;
       border-radius: 12px 12px 0 0;
       padding: 20px;
+      font-weight: bold;
     }
     .card-body {
       padding: 20px;
@@ -34,8 +39,37 @@
     ul {
       padding-left: 20px;
     }
-    .lead {
-      font-size: 1.1rem;
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+    .timeline-item {
+      margin-bottom: 50px;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 100%;
+      background-color: #007bff;
+      transform: translateX(-50%);
+    }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-content {
+      margin-left: 30px;
+      position: relative;
+    }
+    .timeline-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .timeline-content p {
+      font-size: 1rem;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -49,15 +83,15 @@
             <h2 class="text-center mb-0">Role Roam in Mobile Legends</h2>
           </div>
           <div class="card-body">
-            <p class="lead">Role "roam" dalam Mobile Legends adalah peran penting yang fokus pada memberikan dukungan dan bantuan kepada seluruh tim, bukan hanya pada farming atau mengumpulkan sumber daya untuk diri sendiri.</p>
-            <p>Dalam permainan ini, seorang pemain yang mengambil peran roam bertanggung jawab untuk:</p>
-            <ul>
-              <li>Memberikan bantuan di berbagai area peta, seperti memasang ward untuk memberikan visibilitas tambahan.</li>
-              <li>Mengumpulkan sumber daya tambahan dari hutan atau lane lainnya untuk memastikan tim memiliki keunggulan ekonomi yang stabil.</li>
-              <li>Melindungi hero carry agar dapat berkembang dengan aman, menggunakan kemampuan crowd control (CC) untuk mengontrol area atau menginisiasi pertempuran.</li>
-              <li>Membantu membangun keuntungan dengan mengatur warding dan memberikan support selama pertempuran.</li>
-            </ul>
-            <p>Role roam dalam Mobile Legends merupakan salah satu aspek krusial dalam menciptakan sinergi tim yang baik dan memastikan bahwa semua aspek permainan terjaga dengan baik.</p>
+            <p class="lead">Role "roam" dalam Mobile Legends mengacu pada peran yang bertanggung jawab untuk memberikan dukungan dan bantuan kepada tim secara menyeluruh, daripada fokus pada farming atau mengumpulkan sumber daya untuk diri sendiri. Berikut adalah beberapa karakteristik dan tugas dari role roam dalam permainan ini:</p>
+            <ol>
+              <li><strong>Support Tim:</strong> Roam bertanggung jawab untuk membantu seluruh tim dengan memberikan bantuan di berbagai area peta, seperti memasang ward (mata pengintai) untuk memberikan visibilitas tambahan, serta memberikan support selama pertempuran.</li>
+              <li><strong>Pengumpulan Sumber Daya:</strong> Roam juga bertugas untuk mengumpulkan sumber daya tambahan dari hutan atau lane lainnya, untuk memastikan tim memiliki keunggulan ekonomi yang stabil.</li>
+              <li><strong>Inisiasi Pertempuran:</strong> Roam sering kali memiliki kemampuan untuk inisiasi pertempuran atau mengontrol area dengan efektif. Mereka dapat menggunakan kemampuan crowd control (CC) untuk memperlambat atau menghentikan lawan, memberikan kesempatan bagi tim untuk mengambil keuntungan.</li>
+              <li><strong>Perlindungan untuk Carry:</strong> Roam sering kali berfokus untuk melindungi hero carry (yang memiliki damage tinggi) agar dapat berkembang dengan aman, baik dengan memberikan perisai atau dengan cara lainnya.</li>
+              <li><strong>Membangun Keuntungan:</strong> Dengan mengatur warding dengan baik dan memberikan bantuan dalam bentuk pengumpulan sumber daya, roam membantu membangun keuntungan yang memungkinkan tim untuk mendominasi pertempuran lebih lanjut.</li>
+            </ol>
+            <p>Role roam dalam Mobile Legends adalah salah satu peran kunci dalam menciptakan sinergi tim yang baik dan memastikan bahwa semua aspek permainan, mulai dari kontrol peta hingga dukungan selama pertempuran, terjaga dengan baik.</p>
           </div>
         </div>
       </div>
