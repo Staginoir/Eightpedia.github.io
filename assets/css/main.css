@@ -131,10 +131,6 @@ h6 {
   }
 }
 
-.service-icon {
-  width: 50px;
-  height: auto;
-}
 
 
 .scrolled .header {
@@ -1118,6 +1114,11 @@ section,
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
+}
+
+.service-icon {
+  width: 50px;
+  height: auto;
 }
 
 .services .service-item .icon {
