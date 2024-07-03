@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - Staginoir</title>
+    <title>About Us - Staginoir</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f2f2f2;
-            padding-top: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 80px;
+        }
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 100px 25px;
+            margin-bottom: 0;
         }
         .about-section {
             padding: 60px 0;
@@ -18,7 +25,7 @@
             margin-bottom: 40px;
         }
         .about-text h2 {
-            font-size: 2.5em;
+            font-size: 3em;
             color: #333;
             margin-bottom: 20px;
         }
@@ -32,32 +39,169 @@
             border-radius: 50%;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        .team-member {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .team-member img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
-    <section class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-text">
-                        <h2>Tentang Kami</h2>
-                        <p>Selamat datang di Staginoir, tempat di mana kami berkomitmen untuk memberikan solusi kreatif dan inovatif dalam bidang teknologi informasi. Dibentuk dari tim berpengalaman dan bersemangat, kami bertekad untuk memberikan layanan yang berkualitas dan memenuhi kebutuhan klien kami dengan profesionalisme tinggi.</p>
-                        <p>Kami percaya bahwa setiap tantangan adalah kesempatan untuk berkembang. Dengan pendekatan yang kolaboratif dan fokus pada solusi, kami siap menghadapi berbagai proyek dan menjadikannya sukses bersama Anda.</p>
-                        <p>Staginoir telah dikenal karena inovasi dalam pengembangan perangkat lunak dan layanan konsultasi TI. Kami berkomitmen untuk terus meningkatkan standar industri dan memberikan solusi yang dapat diandalkan bagi klien dari berbagai sektor.</p>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Staginoir</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to Staginoir</h1>
+    <p class="lead">We are committed to providing creative and innovative solutions in the field of information technology.</p>
+</div>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Staginoir was founded with a vision to revolutionize the IT industry by delivering high-quality software solutions and consultancy services. We believe in fostering innovation and collaboration to meet the diverse needs of our clients.</p>
+                    <p>Our core values include integrity, excellence, and sustainability. We are dedicated to maintaining the highest standards of professionalism and customer satisfaction.</p>
+                    <p>Over the years, Staginoir has garnered recognition for our commitment to innovation and customer-centric approach. We strive to set new benchmarks in the industry and provide reliable solutions across various sectors.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-image text-center">
+                    <img src="https://via.placeholder.com/300" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Development</h5>
+                        <p class="card-text">We offer custom software development tailored to your business needs.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="about-image text-center">
-                        <img src="path-to-your-about-image.jpg" alt="Tentang Kami">
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Consultancy Services</h5>
+                        <p class="card-text">Expert consultancy services to help your business thrive in the digital era.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">IT Support</h5>
+                        <p class="card-text">Comprehensive IT support and maintenance services for seamless operations.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Bootstrap JS dan Popper.js (untuk dropdown, tooltip, dan popover) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Team Section -->
+<section id="team">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Team</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h3>John Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h3>Jane Smith</h3>
+                    <p>Chief Technology Officer</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member">
+                    <h3>Michael Johnson</h3>
+                    <p>Head of Operations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center">Have a question or inquiry? Reach out to us today!</p>
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Staginoir. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap JS and Popper.js (for dropdowns, tooltips, and popovers) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
