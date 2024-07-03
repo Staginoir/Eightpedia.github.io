@@ -18,7 +18,7 @@
       padding: 0;
     }
     .container {
-      padding: 60px 15px;
+      padding: 20px 15px;
     }
     .card {
       background: #fff;
@@ -87,6 +87,33 @@
       height: auto;
       margin-left: auto; /* Spacing the logo to the right */
     }
+
+    .btn-back {
+      margin-top: 20px;
+    }
+    .btn-back {
+    margin-top: 20px;
+    margin-bottom: 40px; /* Memberi jarak tambahan dari elemen di bawahnya */
+  }
+
+  .btn-back .btn-primary {
+    background-color: #000000; /* Warna latar belakang */
+    border-color: #000000; /* Warna border */
+    color: #fff; /* Warna teks */
+    font-weight: bold; /* Ketebalan teks */
+    padding: 10px 20px; /* Padding di dalam tombol */
+    border-radius: 8px; /* Sudut melengkung pada tombol */
+    transition: background-color 0.3s ease; /* Transisi perubahan warna latar belakang */
+  }
+
+  .btn-back .btn-primary:hover {
+    background-color: #333; /* Warna latar belakang saat dihover */
+    border-color: #333; /* Warna border saat dihover */
+  }
+
+  .btn-back .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); /* Bayangan fokus */
+  }
   </style>
 </head>
 <body>
@@ -140,6 +167,9 @@
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="container text-center btn-back">
+                <a href="index.html" class="btn btn-primary">Kembali</a>
               </div>
             </div>
           </div>
