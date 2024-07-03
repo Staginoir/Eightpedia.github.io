@@ -1378,11 +1378,11 @@ section,
   bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
 .team {
   --background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
-  display: flex;
-  flex-wrap: wrap; /* Menggunakan flexbox untuk tata letak sejajar */
-  justify-content: center; /* Memusatkan item di tengah */
 }
 
 .team .team-member {
@@ -1390,26 +1390,22 @@ section,
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0px 2px 15px color-mix(in srgb, var(--default-color), transparent 90%);
-  width: calc(20% - 20px); /* 20% width untuk setiap item, dikurangi margin */
-  margin: 10px; /* Jarak antar item */
+  height: 50%;
 }
 
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
-  padding-top: 100%; /* Aspek rasio gambar */
 }
 
 .team .team-member .social {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 30px;
   right: 0;
   opacity: 0;
   transition: ease-in-out 0.3s;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang untuk sosial saat hover */
-  padding: 10px 0; /* Padding untuk sosial */
 }
 
 .team .team-member .social a {
@@ -1436,26 +1432,25 @@ section,
 }
 
 .team .team-member .member-info {
-  padding: 15px; /* Mengurangi padding info member */
-  text-align: center; /* Teks di tengah */
+  padding: 25px 15px;
 }
 
 .team .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 16px; /* Ukuran teks judul sedikit lebih kecil */
+  font-size: 18px;
 }
 
 .team .team-member .member-info span {
   display: block;
-  font-size: 12px; /* Ukuran teks info sedikit lebih kecil */
+  font-size: 13px;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
 .team .team-member:hover .social {
   opacity: 1;
-  bottom: 0; /* Menempatkan tombol sosial di bawah saat hover */
+  bottom: 15px;
 }
 
 /*--------------------------------------------------------------
