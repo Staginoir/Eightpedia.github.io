@@ -691,28 +691,49 @@
               
               <div class="col-lg-8">
                 <!-- Form Kontak -->
-                <form  data-aos="fade-up" data-aos-delay="200">
-                  <div class="row gy-4">
-                    <div class="col-md-6">
-                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                    </div>
-                    <div class="col-md-6">
-                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                    </div>
-                    <div class="col-md-12">
-                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                    </div>
-                    <div class="col-md-12">
-                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                    </div>
-                    <div class="col-md-12 text-center">
-                      <div class="loading">Loading</div>
-                      <div class="error-message"></div>
-                      <div class="sent-message">Your message has been sent. Thank you!</div>
-                      <button type="submit" class="btn btn-primary btn-block">Kirim</button>
-                    </div>
-                  </div><!-- End Form Row -->
-                </form><!-- End Contact Form -->
+                <div class="container form-container">
+                  <form id="contactForm" data-aos="fade-up" data-aos-delay="200">
+                      <div class="row gy-4">
+                          <div class="col-md-6">
+                              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                          </div>
+                          <div class="col-md-6">
+                              <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                          </div>
+                          <div class="col-md-12">
+                              <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                          </div>
+                          <div class="col-md-12 text-center">
+                              <div class="loading" style="display: none;">Loading...</div>
+                              <div class="error-message" style="display: none; color: red;"></div>
+                              <div class="sent-message" style="display: none; color: green;">Your message has been sent. Thank you!</div>
+                              <button type="submit" class="btn btn-primary btn-block">Kirim</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              
+              <script>
+              document.getElementById('contactForm').addEventListener('submit', function(event) {
+                  event.preventDefault(); // Mencegah form submit secara default
+              
+                  // Menyembunyikan pesan error dan loading
+                  document.querySelector('.loading').style.display = 'none';
+                  document.querySelector('.error-message').style.display = 'none';
+                  
+                  // Menampilkan pesan sukses
+                  document.querySelector('.sent-message').style.display = 'block';
+              
+                  // Jika ingin menyembunyikan pesan sukses setelah beberapa detik, bisa gunakan timeout
+                  setTimeout(function() {
+                      document.querySelector('.sent-message').style.display = 'none';
+                  }, 5000); // 5000 ms = 5 detik
+              });
+              </script>
+                
               </div><!-- End Form Column -->
             </div><!-- End Row -->
           </div><!-- End Container -->
